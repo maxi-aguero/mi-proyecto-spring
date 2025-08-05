@@ -5,7 +5,12 @@
 </head>
 <body>
     <h1>HOME</h1>
-<h1>Welcome!, <span th:text="${username}">Usuario</span>!</h1>
-<p>Tu color favorito es: <span th:text="${color}"></span>.</p>
+    <h1>Welcome, <span th:text="${username}">Usuario</span>!</h1>
+    <p>Tu color favorito es: 
+        <span th:text="${color}" th:style="'color:' + ${color}">color</span>.
+    </p>
+</body>
+
+
 </body>
 </html>
